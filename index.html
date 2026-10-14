@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/wow.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- start header home  -->
+
+    <header class="header-home ">
+
+        <div class="container-fluid d-flex align-items-center justify-content-center">
+            <div class="row justify-content-center w-100">
+                <div class="col-12 md:col-10 lg:col-5">
+                    <div class="card p-4">
+
+                        <div class="text-center">
+                            <span class="fs-4xl fg-accent  "><i class="fa-solid fa-calculator "></i></span>
+                            <h2 class="fs-3xl fw-bold my-3">product price calculator</h2>
+                            <p class="fw-semibold">Calculate your total price easily</p>
+                        </div>
+
+                        <div class="product-form">
+                            <label for="product" class="mb-3">
+                                <span class="fg-accent"><i class="fa-solid fa-cube "></i></span>
+                                product
+                            </label>
+                            <select name="product" id="product" class="form-control">
+                                <option value="">select product</option>
+                                <option value="800">labtop-$800</option>
+                                <option value="500">phone-$500</option>
+                                <option value="200">watch-$200</option>
+                            </select>
+                            <label for="product" class="my-4">
+                                <span class="fg-accent"><i class="fa-solid fa-cart-shopping"></i></span>
+                                Quantity
+                            </label>
+                            <input type="text" name="quantity" id="quantity" placeholder="enter quantity"
+                                class="form-control">
+                            <label for="product" class="my-4">
+                                <span class="fg-accent"><i class="fa-solid fa-percent"></i></span>
+                                Discount
+                            </label>
+                            <input type="text" name="discount" id="discount" class="form-control">
+
+                            <button class="btn-solid theme-primary form-control my-4" onclick="return calculateprice()">Claculate Price</button>
+
+                        </div>
+
+                        <h5 class="text-center" id="result"></h5>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- end   header home  -->
+
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
